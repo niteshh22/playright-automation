@@ -12,6 +12,11 @@ const { test } = require ('@playwright/test');
 
   await textbox1.fill('Password123');
 
+  const submit =page.locator("button[id='submit']");
+
+  await submit.click();
+
+
    await page.pause();
 
    console.log(page.url());
