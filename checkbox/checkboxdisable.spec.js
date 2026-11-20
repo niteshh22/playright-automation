@@ -13,7 +13,4 @@ await expect(noradio).toBeDisabled();
 
 await page.pause();
 
-
-
-
 });
