@@ -39,6 +39,8 @@ await multichk3.check();
 const multichk4 = page.locator("input[id='multichk4']");
 
 await multichk4.check();
+await page.waitForTimeout(500);
+await multichk4.uncheck();
 
     await page.pause();
 
